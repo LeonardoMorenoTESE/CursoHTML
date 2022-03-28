@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Ejemplo formularios 2</title>
+        </head>
+        <body>
+            <form action="html5-formularios.html" method="get" autocomplete>
+                <h3>text</h3>
+                <label form="nombre">Nombre:</label>
+                <input name="nombre" type="text" value="" readonly disabled size="40" maxlength="10" pattern="[A-Za-z]{3}" 
+                placeholder="First name">
+                <h3>radio</h3>
+                <input type="radio" name="gender" value="male" checked> Male
+                <br>
+                <input type="radio" name="gender" value="female"> Female
+                <br>
+                <input type="radio" name="gender" value="other"> Other
+                <h3>select</h3>
+                <label form="cars">cars:</label>
+                <select name="cars">
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+                <option value="fiat">Fiat</option>
+                <option value="audi">Audi</option>
+                </select>
+                <h3>textarea</h3>
+                <textarea name="message" rows="10" cols="30">
+                The cat was playing in the garden.
+                </textarea>
+                <h3>datalist</h3>
+                <label form="nombre">Navegador:</label>
+                <input list="browsers">
+                <datalist id="browsers">
+                 <option value="Internet Explorer">
+                 <option value="Firefox">
+                 <option value="Chrome">
+                 <option value="Opera">
+                 <option value="Safari">
+                </datalist> 
+                <h3>password</h3>
+                <label form="password">Keyword:</label>
+                <input type="password" name="psw" required> 
+                <h3>checkbox</h3>
+                <input type="checkbox" name="vehicle1" value="Bike"> I have a bike<br>
+                <input type="checkbox" name="vehicle2" value="Car"> I have a car
+                <h3>Color</h3>
+                <label form="color">Color:</label>
+                <input type="color" name="favcolor">
+                <h3>Fecha</h3>
+                <label form="date">Fecha:</label>
+                <input type="date" name="bday" min="2000-01-02">
+                <h3>datetime</h3>
+                <label form="datetime-">datetime:</label>
+                <input type="datetime-local" name="bdaytime">
+                <h3>email</h3>
+                <label form="email">email:</label>
+                <input type="email" name="email" autocomplete="off">
+                <h3>number</h3>
+                <label form="number">numero:</label>
+                <input type="number" name="quantity" min="1" max="25" step="3">
+                <h3>points</h3>
+                <label form="points">numero desde y hasta:</label>
+                <input type="number" name="points" min="0" max="100" step="10" value="30">
+                <h3>range</h3>
+                <label form="range">rango:</label>
+                <input type="range" name="points" min="0" max="10">
+                <h3>search</h3>
+                <label form="search">search:</label>
+                <input type="search" name="googlesearch">
+                <h3>time</h3>
+                <label form="time">Hora:</label>
+                <input type="time" name="usr_time">
+                <h3>url</h3>
+                <label form="url">url:</label>
+                <input type="url" name="homepage">
+                <h3>week</h3>
+                <label form="week">semana año:</label>
+                <input type="week" name="week_year">
+                <h3>file</h3>
+                <label form="fichero">ficheros:</label>
+                <input type="file" name="img" multiple>
+                <br><br>
+                <input type="submit" value="Submit">
+                </form>
+        </body>
+
+</html>
