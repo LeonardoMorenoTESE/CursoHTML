@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Calificaciones del alumno</title>
+    <script src="./js/calificaciones.js"></script>
+  </head>
+  <body>
+    <h1>Calificaciones del alumno</h1>
+    <form>
+      <label for="calificacion1">Calificación 1:</label>
+      <input type="number" id="calificacion1" name="calificacion1"><br>
+      <label for="calificacion2">Calificación 2:</label>
+      <input type="number" id="calificacion2" name="calificacion2"><br>
+      <label for="calificacion3">Calificación 3:</label>
+      <input type="number" id="calificacion3" name="calificacion3"><br><br>
+      <input type="button" value="Calcular promedio" onclick="calcularPromedio()">
+    </form>
+    <p id="resultado"></p>
+  </body>
+</html>
