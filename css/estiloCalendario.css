@@ -1,0 +1,91 @@
+/* Estilo para el el h1 */
+h1 {
+    background-color: #0077b6;
+    color: white;
+    padding: 10px;
+    text-align: center;
+  }
+  
+/* Estilo para el formulario */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+label {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+select,
+input[type="number"] {
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px;
+    background-color: #0077b6;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #023e8a;
+}
+
+
+/* Estilo para el calendario */
+#calendario {
+    margin: 0 auto;
+    width: 80%;
+    font-size: 1.2em;
+}
+
+/* Estilo para la tabla */
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+/* Estilo para las celdas de la tabla */
+td {
+    text-align: center;
+    vertical-align: middle;
+    height: 60px;
+    width: 14.28%;
+    border: 1px solid #0077b6;
+}
+
+/* Estilo para las celdas vacías */
+td:empty {
+    border: none;
+}
+
+/* Estilo para los encabezados de los días de la semana */
+th {
+    height: 50px;
+    background-color: #0077b6;
+    color: #fff;
+    font-weight: bold;
+    border: 1px solid #0077b6;
+}
+
+/* Estilo para los días de fin de semana */
+td:nth-child(1), td:nth-child(7) {
+    background-color: #f2f2f2;
+}
+
+/* Estilo para los días festivos */
+td.festivo {
+    background-color: #ff9999;
+}
