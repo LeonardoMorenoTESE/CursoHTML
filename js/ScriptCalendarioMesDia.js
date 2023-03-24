@@ -4,7 +4,7 @@ function generarCalendario() {
 
     // Obtener el primer día del mes
     var primerDia = new Date(anioSeleccionado, mesSeleccionado - 1, 1);
-    var primerDiaSemana = primerDia.getDay()-1; // 0 (domingo) a 6 (sábado)
+    var primerDiaSemana = primerDia.getDay(); // 0 (domingo) a 6 (sábado)
 
     // Obtener la cantidad de días del mes
     var ultimoDia = new Date(anioSeleccionado, mesSeleccionado, 0);
@@ -15,13 +15,13 @@ function generarCalendario() {
     // Crear encabezado de los días de la semana
     tabla += "<thead>";
     tabla += "<tr>";
+    tabla += "<th>Domingo</th>";
     tabla += "<th>Lunes</th>";
     tabla += "<th>Martes</th>";
-    tabla += "<th>Miércoles</th>";
+    tabla += "<th>Miercoles</th>";
     tabla += "<th>Jueves</th>";
     tabla += "<th>Viernes</th>";
-    tabla += "<th>Sábado</th>";
-    tabla += "<th>Domingo</th>";
+    tabla += "<th>Sabado</th>";
     tabla += "</tr>";
     tabla += "</thead>";
     
