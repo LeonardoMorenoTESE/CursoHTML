@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  .title {
+    font-size: 4rem;
+    margin: 0;
+  }
+  
+  .subtitle {
+    font-size: 2rem;
+    margin: 0;
+  }
+  
+  .characters {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+  }
+  
+  .character {
+    width: 150px;
+    height: 150px;
+    margin: 0 1rem;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .character:hover {
+    transform: scale(1.1);
+  }
+ table {
+    margin: 50px auto;
+    border-collapse: collapse;
+    border: 2px solid #fff;
+  }
+  
+  th, td {
+    padding: 10px;
+    border: 1px solid #fff;
+  }
+  
+  th {
+    background-color: rgba(255, 68, 0, 0.829);
+  }
+  
+  td:nth-child(odd) {
+    background-color: rgba(27, 28, 28, 0.627);
+  }
+  
+  td:nth-child(even) {
+    background-color: rgba(0, 0, 255, 0.723);
+  }  
